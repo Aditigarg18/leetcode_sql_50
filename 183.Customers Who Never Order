@@ -1,4 +1,4 @@
-
+<!-- 
 183. Customers Who Never Order
 
 Table: Customers
@@ -30,6 +30,6 @@ Write a solution to find all customers who never order anything.
 
 Return the result table in any order.
 
-The result format is in the following example.
+The result format is in the following example.-->
 
 select name as Customers from Customers c where id not in (select customerId from  orders o );
