@@ -44,5 +44,7 @@ Output:
 | Algeria     | 37100000   | 2381741 |
 +-------------+------------+---------+
 */
-select w.name,w.population,w.area from World w where area>=3000000
-or population>=25000000;
+# Write your MySQL query statement below
+select name,population,area 
+from World
+where area>=3000000 or population>=25000000;
