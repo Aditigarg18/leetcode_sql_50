@@ -37,3 +37,8 @@ The result format is in the following example.
 */
 select product_name,year,price from sales s left outer join Product p 
 on s.product_id=p.product_id order by year asc;
+ -- or 
+select product_name,year,price
+from Product p
+inner join sales s
+on p.product_id=s.product_id;
